@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+import ChatRoom from '../components/ChatRoom';
 
 
 const Lobby = () => {
@@ -8,7 +9,7 @@ const Lobby = () => {
             {/* RoomList */}
         </Grid>
         <Grid item xs={9}>
-            {/* ChatRoom */}
+            <ChatRoom />
         </Grid>
     </Grid>)
 }

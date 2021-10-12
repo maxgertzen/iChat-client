@@ -16,10 +16,11 @@ function ChatInput({ handleSubmit }) {
     }
     return (
         <form style={{
-            minHeight: '10vh'
+            minHeight: '10vh',
+            width: '100%'
         }}>
-            <FormGroup row>
-                <TextField id="user-msg" label="Message" onChange={handleChange} value={text} autoFocus fullWidth multiline minRows={1} variant={'outlined'} />
+            <FormGroup row sx={{ width: '100%' }}>
+                <TextField id="user-msg" label="Message" sx={{ width: '90%' }} onChange={handleChange} value={text} autoFocus multiline minRows={1} variant={'outlined'} />
                 <SendButton onClick={() => sendMessage()} />
             </FormGroup>
         </form>
